@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 Edward Philip. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ContactLoadViewController.h"
 
-@interface ViewController ()
+@interface ContactLoadViewController ()
 
 @end
 
-@implementation ViewController
+@implementation ContactLoadViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

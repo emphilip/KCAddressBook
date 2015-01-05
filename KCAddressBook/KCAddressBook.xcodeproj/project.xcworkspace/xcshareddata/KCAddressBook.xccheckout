@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DB7A3424-CD96-4B99-82E8-457461C777EE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>KCAddressBook</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5B1581EF7340260C248D3E74D86392D4208158B7</key>
+		<string>github.com:emphilip/KCAddressBook.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>KCAddressBook/KCAddressBook.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5B1581EF7340260C248D3E74D86392D4208158B7</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:emphilip/KCAddressBook.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5B1581EF7340260C248D3E74D86392D4208158B7</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5B1581EF7340260C248D3E74D86392D4208158B7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>KCAddressBook</string>
+		</dict>
+	</array>
+</dict>
+</plist>
