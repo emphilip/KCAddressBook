@@ -43,7 +43,8 @@
     UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"ContactCell"];
     
     KC_ContactUser *user = (KC_ContactUser *)[[[AddressBookSingleton instance] contactList] objectAtIndex:[indexPath row]];
-    cell.textLabel.text = [user.name getFullName];
+    cell.textLabel.text = [user.name getFormattedFullName];
+    cell.detailTextLabel.text = [user phone];
     return cell;
 }
 

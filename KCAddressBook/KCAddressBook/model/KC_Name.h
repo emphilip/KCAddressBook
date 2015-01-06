@@ -15,6 +15,6 @@
 @property (nonatomic, strong) NSString *last;
 
 + (instancetype)initWithDictionary:(NSDictionary *)rawDict;
--(NSString *) getFullName;
+-(NSString *) getFormattedFullName;
 
 @end

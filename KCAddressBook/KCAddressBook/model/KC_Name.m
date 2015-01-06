@@ -14,7 +14,7 @@
     KC_Name *name = [[self alloc] init];
     
     if (self != nil){
-        name.title = [NSString ][rawDict objectForKey:@"title"];
+        name.title = [rawDict objectForKey:@"title"];
         name.first = [rawDict objectForKey:@"first"];
         name.last = [rawDict objectForKey:@"last"];
     }
@@ -23,8 +23,15 @@
 }
 
 
--(NSString *) getFullName{
-    NSString *formattedName = [NSString stringWithFormat:@"%@. %@ %@", self.title, self.first, self.last];    
+-(NSString *) getFormattedFullName{
+    NSString *formattedName = [NSString stringWithFormat:@"%@%@. %@%@ %@%@",
+                               [[self.title substringToIndex:1] uppercaseString],
+                               [self.title substringFromIndex:1],
+                               [[self.first substringToIndex:1] uppercaseString],
+                               [self.first substringFromIndex:1],
+                               [[self.last substringToIndex:1] uppercaseString],
+                               [self.last substringFromIndex:1]];
+                               
     return formattedName;
 }
 
