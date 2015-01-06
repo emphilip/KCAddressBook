@@ -10,16 +10,22 @@
 
 @implementation KC_Name
 
-+ (id)initWithDictionary:(NSDictionary *)rawDict{
-    KC_Name *name = [KC_Name init];
++ (instancetype)initWithDictionary:(NSDictionary *)rawDict{
+    KC_Name *name = [[self alloc] init];
     
     if (self != nil){
-        name.title = [rawDict objectForKey:@"title"];
+        name.title = [NSString ][rawDict objectForKey:@"title"];
         name.first = [rawDict objectForKey:@"first"];
         name.last = [rawDict objectForKey:@"last"];
     }
     
-    return self;
+    return name;
+}
+
+
+-(NSString *) getFullName{
+    NSString *formattedName = [NSString stringWithFormat:@"%@. %@ %@", self.title, self.first, self.last];    
+    return formattedName;
 }
 
 @end

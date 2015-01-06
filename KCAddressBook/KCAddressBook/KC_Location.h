@@ -15,6 +15,6 @@
 @property (nonatomic, strong) NSString *state;
 @property (nonatomic, strong) NSString *zip;
 
-+ (id)initWithDictionary:(NSDictionary *)rawDict;
++ (instancetype)initWithDictionary:(NSDictionary *)rawDict;
 
 @end

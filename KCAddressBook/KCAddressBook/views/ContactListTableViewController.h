@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KC_HTTPClient.h"
 
-@interface ContactListTableViewController : UITableViewController
+@interface ContactListTableViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate, KC_HTTPClientDelgate>
+
 
 @end

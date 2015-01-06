@@ -10,8 +10,8 @@
 
 @implementation KC_Location
 
-+ (id)initWithDictionary:(NSDictionary *)rawDict{
-    KC_Location *location = [KC_Location init];
++ (instancetype)initWithDictionary:(NSDictionary *)rawDict{
+    KC_Location *location = [[self alloc] init];
     
     if (location != nil){
         location.street = [rawDict objectForKey:@"street"];

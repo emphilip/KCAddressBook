@@ -11,28 +11,28 @@
 
 @implementation KC_ContactUser
 
-+ (id)initWithDictionary:(NSDictionary *)rawDict{
-    KC_ContactUser *user = [KC_ContactUser init];
++ (instancetype)initWithDictionary:(NSDictionary *)rawDict{
+    KC_ContactUser *user = [[self alloc] init];
     
     if (user != nil){
-        user.gender = [rawDict objectForKey:@"gender"];
+        user.gender = [rawDict valueForKeyPath:@"user.gender"];
         
-        user.name = [KC_Name initWithDictionary:[rawDict objectForKey:@"name"]];
+        user.name = [KC_Name initWithDictionary:[rawDict valueForKeyPath:@"user.name"]];
         
-        user.email = [rawDict objectForKey:@"email"];
-        user.username = [rawDict objectForKey:@"username"];
-        user.password = [rawDict objectForKey:@"password"];
+        user.email = [rawDict valueForKeyPath:@"user.email"];
+        user.username = [rawDict valueForKeyPath:@"user.username"];
+        user.password = [rawDict valueForKeyPath:@"user.password"];
         
-        user.salt = [rawDict objectForKey:@"salt"];
-        user.md5 = [rawDict objectForKey:@"md5"];
-        user.sha1 = [rawDict objectForKey:@"sha1"];
-        user.sha256 = [rawDict objectForKey:@"sha256"];
-        user.registered = [rawDict objectForKey:@"registered"];
-        user.dob = [rawDict objectForKey:@"dob"];
-        user.phone = [rawDict objectForKey:@"phone"];
-        user.cell = [rawDict objectForKey:@"cell"];
-        user.SSN = [rawDict objectForKey:@"SSN"];
-        user.version = [rawDict objectForKey:@"version"];
+        user.salt = [rawDict valueForKeyPath:@"user.salt"];
+        user.md5 = [rawDict valueForKeyPath:@"user.md5"];
+        user.sha1 = [rawDict valueForKeyPath:@"user.sha1"];
+        user.sha256 = [rawDict valueForKeyPath:@"user.sha256"];
+        user.registered = [rawDict valueForKeyPath:@"user.registered"];
+        user.dob = [rawDict valueForKeyPath:@"user.dob"];
+        user.phone = [rawDict valueForKeyPath:@"user.phone"];
+        user.cell = [rawDict valueForKeyPath:@"user.cell"];
+        user.SSN = [rawDict valueForKeyPath:@"user.SSN"];
+        user.version = [rawDict valueForKeyPath:@"user.version"];
     }
     
     return user;

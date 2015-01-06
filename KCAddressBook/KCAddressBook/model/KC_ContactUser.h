@@ -36,6 +36,6 @@
 
 @property (nonatomic, strong) NSString *version;
 
-+ (id)initWithDictionary:(NSDictionary *)rawDict;
++ (instancetype)initWithDictionary:(NSDictionary *)rawDict;
 
 @end

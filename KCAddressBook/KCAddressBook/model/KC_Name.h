@@ -14,6 +14,7 @@
 @property (nonatomic, strong) NSString *first;
 @property (nonatomic, strong) NSString *last;
 
-+ (id)initWithDictionary:(NSDictionary *)rawDict;
++ (instancetype)initWithDictionary:(NSDictionary *)rawDict;
+-(NSString *) getFullName;
 
 @end

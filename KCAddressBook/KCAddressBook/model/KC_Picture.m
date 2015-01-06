@@ -10,8 +10,8 @@
 
 @implementation KC_Picture
 
-+ (id)initWithDictionary:(NSDictionary *)rawDict{
-    KC_Picture *pic = [KC_Picture init];
++ (instancetype)initWithDictionary:(NSDictionary *)rawDict{
+    KC_Picture *pic = [[self alloc] init];
     
     if (pic != nil){
         pic.large = [rawDict objectForKey:@"large"];

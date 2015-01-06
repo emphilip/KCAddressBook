@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2B673A3D1A59F9A9001AE87F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B673A3C1A59F9A9001AE87F /* main.m */; };
 		2B673A401A59F9A9001AE87F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B673A3F1A59F9A9001AE87F /* AppDelegate.m */; };
-		2B673A431A59F9A9001AE87F /* ContactLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B673A421A59F9A9001AE87F /* ContactLoadViewController.m */; };
 		2B673A461A59F9A9001AE87F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B673A441A59F9A9001AE87F /* Main.storyboard */; };
 		2B673A481A59F9A9001AE87F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B673A471A59F9A9001AE87F /* Images.xcassets */; };
 		2B673A4B1A59F9AA001AE87F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B673A491A59F9AA001AE87F /* LaunchScreen.xib */; };
@@ -29,8 +28,8 @@
 		2BC15A1D1A5A4E0100B5C6CE /* KC_Name.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC15A1C1A5A4E0100B5C6CE /* KC_Name.m */; };
 		2BC15A201A5A4E1A00B5C6CE /* KC_Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC15A1F1A5A4E1A00B5C6CE /* KC_Location.m */; };
 		2BC15A231A5A4E3D00B5C6CE /* KC_Picture.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC15A221A5A4E3D00B5C6CE /* KC_Picture.m */; };
-		2BC15A261A5AC37C00B5C6CE /* KC_AddressBookSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC15A251A5AC37C00B5C6CE /* KC_AddressBookSingleton.m */; };
 		2BC15A2A1A5AC5CB00B5C6CE /* ContactListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC15A291A5AC5CB00B5C6CE /* ContactListTableViewController.m */; };
+		2BC15FC31A5B96E100B5C6CE /* AddressBookSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC15FC21A5B96E100B5C6CE /* AddressBookSingleton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +48,6 @@
 		2B673A3C1A59F9A9001AE87F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2B673A3E1A59F9A9001AE87F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2B673A3F1A59F9A9001AE87F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2B673A411A59F9A9001AE87F /* ContactLoadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactLoadViewController.h; sourceTree = "<group>"; };
-		2B673A421A59F9A9001AE87F /* ContactLoadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactLoadViewController.m; sourceTree = "<group>"; };
 		2B673A451A59F9A9001AE87F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B673A471A59F9A9001AE87F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2B673A4A1A59F9AA001AE87F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -89,10 +86,10 @@
 		2BC15A1F1A5A4E1A00B5C6CE /* KC_Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KC_Location.m; sourceTree = "<group>"; };
 		2BC15A211A5A4E3D00B5C6CE /* KC_Picture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KC_Picture.h; path = model/KC_Picture.h; sourceTree = "<group>"; };
 		2BC15A221A5A4E3D00B5C6CE /* KC_Picture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KC_Picture.m; path = model/KC_Picture.m; sourceTree = "<group>"; };
-		2BC15A241A5AC37C00B5C6CE /* KC_AddressBookSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KC_AddressBookSingleton.h; sourceTree = "<group>"; };
-		2BC15A251A5AC37C00B5C6CE /* KC_AddressBookSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KC_AddressBookSingleton.m; sourceTree = "<group>"; };
 		2BC15A281A5AC5CB00B5C6CE /* ContactListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactListTableViewController.h; path = views/ContactListTableViewController.h; sourceTree = "<group>"; };
 		2BC15A291A5AC5CB00B5C6CE /* ContactListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactListTableViewController.m; path = views/ContactListTableViewController.m; sourceTree = "<group>"; };
+		2BC15FC11A5B96E100B5C6CE /* AddressBookSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressBookSingleton.h; sourceTree = "<group>"; };
+		2BC15FC21A5B96E100B5C6CE /* AddressBookSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBookSingleton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,19 +131,20 @@
 		2B673A391A59F9A9001AE87F /* KCAddressBook */ = {
 			isa = PBXGroup;
 			children = (
-				2BC15A171A5A48A800B5C6CE /* model */,
-				2B673A611A59FB16001AE87F /* libraries */,
-				2B673A601A59FB05001AE87F /* API */,
 				2B673A3E1A59F9A9001AE87F /* AppDelegate.h */,
 				2B673A3F1A59F9A9001AE87F /* AppDelegate.m */,
+				2BC15A131A5A37AB00B5C6CE /* KC_HTTPClient.h */,
+				2BC15A141A5A37AB00B5C6CE /* KC_HTTPClient.m */,
+				2BC15FC11A5B96E100B5C6CE /* AddressBookSingleton.h */,
+				2BC15FC21A5B96E100B5C6CE /* AddressBookSingleton.m */,
+				2BC15A171A5A48A800B5C6CE /* model */,
+				2B673A611A59FB16001AE87F /* libraries */,
 				2BC15A271A5AC59400B5C6CE /* views */,
 				2B673A441A59F9A9001AE87F /* Main.storyboard */,
 				2B673A471A59F9A9001AE87F /* Images.xcassets */,
 				2B673A491A59F9AA001AE87F /* LaunchScreen.xib */,
 				2B673A3A1A59F9A9001AE87F /* Supporting Files */,
 				2BC15A161A5A391600B5C6CE /* KC_Constants.h */,
-				2BC15A241A5AC37C00B5C6CE /* KC_AddressBookSingleton.h */,
-				2BC15A251A5AC37C00B5C6CE /* KC_AddressBookSingleton.m */,
 			);
 			path = KCAddressBook;
 			sourceTree = "<group>";
@@ -175,15 +173,6 @@
 				2B673A551A59F9AA001AE87F /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2B673A601A59FB05001AE87F /* API */ = {
-			isa = PBXGroup;
-			children = (
-				2BC15A131A5A37AB00B5C6CE /* KC_HTTPClient.h */,
-				2BC15A141A5A37AB00B5C6CE /* KC_HTTPClient.m */,
-			);
-			name = API;
 			sourceTree = "<group>";
 		};
 		2B673A611A59FB16001AE87F /* libraries */ = {
@@ -248,8 +237,6 @@
 		2BC15A271A5AC59400B5C6CE /* views */ = {
 			isa = PBXGroup;
 			children = (
-				2B673A411A59F9A9001AE87F /* ContactLoadViewController.h */,
-				2B673A421A59F9A9001AE87F /* ContactLoadViewController.m */,
 				2BC15A281A5AC5CB00B5C6CE /* ContactListTableViewController.h */,
 				2BC15A291A5AC5CB00B5C6CE /* ContactListTableViewController.m */,
 			);
@@ -357,7 +344,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BC15A2A1A5AC5CB00B5C6CE /* ContactListTableViewController.m in Sources */,
-				2B673A431A59F9A9001AE87F /* ContactLoadViewController.m in Sources */,
 				2BC15A0E1A5A340A00B5C6CE /* AFSecurityPolicy.m in Sources */,
 				2BC15A1D1A5A4E0100B5C6CE /* KC_Name.m in Sources */,
 				2B673A401A59F9A9001AE87F /* AppDelegate.m in Sources */,
@@ -366,6 +352,7 @@
 				2BC15A201A5A4E1A00B5C6CE /* KC_Location.m in Sources */,
 				2BC15A0F1A5A340A00B5C6CE /* AFURLConnectionOperation.m in Sources */,
 				2BC15A1A1A5A493A00B5C6CE /* KC_ContactUser.m in Sources */,
+				2BC15FC31A5B96E100B5C6CE /* AddressBookSingleton.m in Sources */,
 				2BC15A0A1A5A340A00B5C6CE /* AFHTTPRequestOperation.m in Sources */,
 				2BC15A091A5A340A00B5C6CE /* AFNetworkActivityLogger.m in Sources */,
 				2BC15A101A5A340A00B5C6CE /* AFURLRequestSerialization.m in Sources */,
@@ -373,7 +360,6 @@
 				2BC15A0D1A5A340A00B5C6CE /* AFNetworkReachabilityManager.m in Sources */,
 				2BC15A111A5A340A00B5C6CE /* AFURLResponseSerialization.m in Sources */,
 				2BC15A121A5A340A00B5C6CE /* AFURLSessionManager.m in Sources */,
-				2BC15A261A5AC37C00B5C6CE /* KC_AddressBookSingleton.m in Sources */,
 				2BC15A151A5A37AB00B5C6CE /* KC_HTTPClient.m in Sources */,
 				2B673A3D1A59F9A9001AE87F /* main.m in Sources */,
 			);

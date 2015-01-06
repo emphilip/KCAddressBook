@@ -14,6 +14,6 @@
 @property (nonatomic, strong) NSString *medium;
 @property (nonatomic, strong) NSString *thumbnail;
 
-+ (id)initWithDictionary:(NSDictionary *)rawDict;
++ (instancetype)initWithDictionary:(NSDictionary *)rawDict;
 
 @end

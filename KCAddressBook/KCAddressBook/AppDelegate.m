@@ -6,6 +6,9 @@
 //  Copyright (c) 2015 Edward Philip. All rights reserved.
 //
 
+#import "AFNetworking.h"
+#import "AFNetworkActivityLogger.h"
+
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
@@ -17,6 +20,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [[AFNetworkActivityLogger sharedLogger] startLogging];
+    [[AFNetworkActivityLogger sharedLogger] setLevel:AFLoggerLevelDebug];
+    
     return YES;
 }
 

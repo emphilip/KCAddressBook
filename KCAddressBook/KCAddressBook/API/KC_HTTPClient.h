@@ -14,14 +14,15 @@
 
 @property (nonatomic, weak) id<KC_HTTPClientDelgate> delegate;
 
-+ (KC_HTTPClient *)sharedClient;
-- (NSMutableURLRequest *)getContactsFromService;
++(KC_HTTPClient *)sharedClient;
+-(void) fetchNewUsers;
 
 @end
 
 
 @protocol KC_HTTPClientDelgate <NSObject>
 @optional
--(void)KC_HTTPClient:(KC_HTTPClient *)client didSucceedWithData:(id)vc_data;
--(void)KC_HTTPClient:(KC_HTTPClient *)client didFailWithError:(NSError *)error;
+-(void)successfulCallForHTTPClient:(KC_HTTPClient *)client withData:(id)responseObject;
+-(void)failedCallWithHTTPClient:(KC_HTTPClient *)client withError:(NSError *)error;
 @end
+
