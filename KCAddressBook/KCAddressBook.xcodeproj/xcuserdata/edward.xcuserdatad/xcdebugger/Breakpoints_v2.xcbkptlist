@@ -122,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KCAddressBook/KC_Location.m"
-            timestampString = "442288780.626241"
+            timestampString = "442290028.673557"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "-getFormattedAddress"
             landmarkType = "5">
          </BreakpointContent>

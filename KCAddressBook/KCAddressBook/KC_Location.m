@@ -24,7 +24,11 @@
 }
 
 - (NSString *) getFormattedAddress{
-    NSString *addressString = [NSString stringWithFormat:@"%@\n%@, %@\n%@", [self street], [self city], [self state], [self zip]];
+    NSString *addressString = [NSString stringWithFormat:@"%@\n%@, %@\n%@",
+                               [[self street] capitalizedString],
+                               [[self city] capitalizedString],
+                               [[self state] capitalizedString],
+                               [[self zip] capitalizedString]];
     return addressString;
 }
 

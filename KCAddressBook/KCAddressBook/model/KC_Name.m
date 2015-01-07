@@ -24,13 +24,10 @@
 
 
 -(NSString *) getFormattedFullName{
-    NSString *formattedName = [NSString stringWithFormat:@"%@%@. %@%@ %@%@",
-                               [[self.title substringToIndex:1] uppercaseString],
-                               [self.title substringFromIndex:1],
-                               [[self.first substringToIndex:1] uppercaseString],
-                               [self.first substringFromIndex:1],
-                               [[self.last substringToIndex:1] uppercaseString],
-                               [self.last substringFromIndex:1]];
+    NSString *formattedName = [NSString stringWithFormat:@"%@. %@ %@",
+                               [[self title] capitalizedString],
+                               [[self first] capitalizedString],
+                               [[self last] capitalizedString]];
                                
     return formattedName;
 }
