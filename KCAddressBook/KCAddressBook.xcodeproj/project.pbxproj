@@ -30,6 +30,7 @@
 		2BC15A231A5A4E3D00B5C6CE /* KC_Picture.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC15A221A5A4E3D00B5C6CE /* KC_Picture.m */; };
 		2BC15A2A1A5AC5CB00B5C6CE /* ContactListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC15A291A5AC5CB00B5C6CE /* ContactListTableViewController.m */; };
 		2BC15FC31A5B96E100B5C6CE /* AddressBookSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC15FC21A5B96E100B5C6CE /* AddressBookSingleton.m */; };
+		2BC15FC61A5CAD1A00B5C6CE /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC15FC51A5CAD1A00B5C6CE /* ContactViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,8 @@
 		2BC15A291A5AC5CB00B5C6CE /* ContactListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactListTableViewController.m; path = views/ContactListTableViewController.m; sourceTree = "<group>"; };
 		2BC15FC11A5B96E100B5C6CE /* AddressBookSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressBookSingleton.h; sourceTree = "<group>"; };
 		2BC15FC21A5B96E100B5C6CE /* AddressBookSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBookSingleton.m; sourceTree = "<group>"; };
+		2BC15FC41A5CAD1A00B5C6CE /* ContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactViewController.h; sourceTree = "<group>"; };
+		2BC15FC51A5CAD1A00B5C6CE /* ContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +242,8 @@
 			children = (
 				2BC15A281A5AC5CB00B5C6CE /* ContactListTableViewController.h */,
 				2BC15A291A5AC5CB00B5C6CE /* ContactListTableViewController.m */,
+				2BC15FC41A5CAD1A00B5C6CE /* ContactViewController.h */,
+				2BC15FC51A5CAD1A00B5C6CE /* ContactViewController.m */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -362,6 +367,7 @@
 				2BC15A121A5A340A00B5C6CE /* AFURLSessionManager.m in Sources */,
 				2BC15A151A5A37AB00B5C6CE /* KC_HTTPClient.m in Sources */,
 				2B673A3D1A59F9A9001AE87F /* main.m in Sources */,
+				2BC15FC61A5CAD1A00B5C6CE /* ContactViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

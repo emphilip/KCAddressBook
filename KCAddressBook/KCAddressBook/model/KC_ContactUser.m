@@ -33,6 +33,9 @@
         user.cell = [rawDict valueForKeyPath:@"user.cell"];
         user.SSN = [rawDict valueForKeyPath:@"user.SSN"];
         user.version = [rawDict valueForKeyPath:@"user.version"];
+        
+        user.picture = [KC_Picture initWithDictionary:[rawDict valueForKeyPath:@"user.picture"]]
+        ;
     }
     
     return user;

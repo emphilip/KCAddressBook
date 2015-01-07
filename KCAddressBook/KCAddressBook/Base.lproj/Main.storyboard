@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="czK-je-fgC">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Contact List Table View Controller-->
@@ -46,10 +48,79 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="ug9-g1-zFQ" kind="show" identifier="showEditContactView" id="cTC-qj-QAx"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UUb-eE-tcy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="191" y="684"/>
+        </scene>
+        <!--Edit Contact-->
+        <scene sceneID="7Y5-ph-Z5o">
+            <objects>
+                <viewController title="Edit Contact" id="ug9-g1-zFQ" customClass="ContactViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AeR-ZA-sUB"/>
+                        <viewControllerLayoutGuide type="bottom" id="QEz-mu-V9R"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="atm-ca-ZZe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7lj-4u-lWt">
+                                <rect key="frame" x="263" y="72" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="VDa-jJ-eOK"/>
+                                    <constraint firstAttribute="width" constant="75" id="peV-Ux-eZi"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Full Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIk-Th-xuW">
+                                <rect key="frame" x="275" y="155" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNV-V1-7ZA">
+                                <rect key="frame" x="275" y="184" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.27773832070707072" green="0.27773832070707072" blue="0.27773832070707072" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Phone" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLa-jm-9JU">
+                                <rect key="frame" x="275" y="213" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.27773832069999999" green="0.27773832069999999" blue="0.27773832069999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FNV-V1-7ZA" firstAttribute="width" secondItem="GLa-jm-9JU" secondAttribute="width" id="90I-Gi-bO8"/>
+                            <constraint firstItem="GLa-jm-9JU" firstAttribute="top" secondItem="FNV-V1-7ZA" secondAttribute="bottom" constant="10" id="ASq-x7-ywL"/>
+                            <constraint firstItem="7lj-4u-lWt" firstAttribute="top" secondItem="AeR-ZA-sUB" secondAttribute="bottom" constant="15" id="EXf-ed-YAY"/>
+                            <constraint firstItem="FNV-V1-7ZA" firstAttribute="top" secondItem="fIk-Th-xuW" secondAttribute="bottom" constant="10" id="HRU-Hg-ocY"/>
+                            <constraint firstItem="fIk-Th-xuW" firstAttribute="width" secondItem="FNV-V1-7ZA" secondAttribute="width" id="L6O-gr-feU"/>
+                            <constraint firstItem="fIk-Th-xuW" firstAttribute="width" secondItem="atm-ca-ZZe" secondAttribute="width" multiplier="3:2" id="Q1z-7N-nzN"/>
+                            <constraint firstItem="7lj-4u-lWt" firstAttribute="leading" secondItem="atm-ca-ZZe" secondAttribute="leadingMargin" constant="10" id="Yl7-fC-Lka"/>
+                            <constraint firstItem="fIk-Th-xuW" firstAttribute="top" secondItem="7lj-4u-lWt" secondAttribute="bottom" constant="8" id="bQD-KT-s0j"/>
+                            <constraint firstAttribute="centerX" secondItem="fIk-Th-xuW" secondAttribute="centerX" id="cHD-su-8If"/>
+                            <constraint firstAttribute="centerX" secondItem="FNV-V1-7ZA" secondAttribute="centerX" id="eh4-YE-mEM"/>
+                            <constraint firstAttribute="centerX" secondItem="7lj-4u-lWt" secondAttribute="centerX" constant="-0.5" id="fMV-mW-BV8"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Yl7-fC-Lka"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="profileImageView" destination="7lj-4u-lWt" id="k7z-qp-6T8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y8x-u2-zWs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="921" y="684"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cWB-5S-JBr">

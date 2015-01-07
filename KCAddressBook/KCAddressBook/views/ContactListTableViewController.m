@@ -7,9 +7,9 @@
 //
 
 #import "AddressBookSingleton.h"
-
 #import "KC_ContactUser.h"
 
+#import "ContactEditViewController.h"
 #import "ContactListTableViewController.h"
 
 @implementation ContactListTableViewController
@@ -46,6 +46,27 @@
     cell.textLabel.text = [user.name getFormattedFullName];
     cell.detailTextLabel.text = [user phone];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [self performSegueWithIdentifier:@"showEditContactView" sender:self];
+    
+    // note: should not be necessary but current iOS 8.0 bug (seed 4) requires it
+    //    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+}
+
+
+#pragma mark - Segue methods
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"showEditContactView"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        ContactEditViewController *editContactViewController = segue.destinationViewController;
+        KC_ContactUser *contactToEdit = [[[AddressBookSingleton instance] contactList] objectAtIndex:indexPath.row];
+        editContactViewController.contact = contactToEdit;
+    }
+    
 }
 
 
