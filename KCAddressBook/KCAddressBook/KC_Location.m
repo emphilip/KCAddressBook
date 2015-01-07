@@ -23,4 +23,10 @@
     return location;
 }
 
+- (NSString *) getFormattedAddress{
+    NSString *addressString = [NSString stringWithFormat:@"%@\n%@, %@\n%@", [self street], [self city], [self state], [self zip]];
+    return addressString;
+}
+
+
 @end

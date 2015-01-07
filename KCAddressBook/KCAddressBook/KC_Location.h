@@ -16,5 +16,6 @@
 @property (nonatomic, strong) NSString *zip;
 
 + (instancetype)initWithDictionary:(NSDictionary *)rawDict;
+- (NSString *) getFormattedAddress;
 
 @end

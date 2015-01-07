@@ -10,13 +10,14 @@
 
 #import "KC_ContactUser.h"
 
-@interface ContactViewController : UIViewController{
-     KC_ContactUser *contact;
-}
+@interface ContactViewController : UIViewController
 
 @property (strong, nonatomic) KC_ContactUser *contact;
 @property (strong, nonatomic) IBOutlet UIImageView *profileImageView;
-@property (strong, nonatomic) IBOutlet UILabel *titleLabel;
+@property (strong, nonatomic) IBOutlet UILabel *fullNameLabel;
+@property (strong, nonatomic) IBOutlet UILabel *emailLabel;
+@property (strong, nonatomic) IBOutlet UILabel *phoneLabel;
+@property (strong, nonatomic) IBOutlet UITextView *addressTextView;
 
 
 @end

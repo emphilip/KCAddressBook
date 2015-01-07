@@ -6,7 +6,11 @@
 //  Copyright (c) 2015 Edward Philip. All rights reserved.
 //
 
-#import "ContactEditViewController.h"
+#import "KC_ContactUser.h"
+#import "KC_Name.h"
+#import "KC_Location.h"
+
+#import "ContactViewController.h"
 
 @implementation ContactViewController
 
@@ -17,7 +21,11 @@
     [super viewDidLoad];
     UIImage *profileImage = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[[[self contact] picture] medium]]]];
     [[self profileImageView]  setImage:profileImage];
-    [[[self profileImageView] layer] setCornerRadius:25];
+    [[[self profileImageView] layer] setCornerRadius:75];
+    [[self fullNameLabel] setText:[[[self contact] name] getFormattedFullName]];
+    [[self emailLabel] setText:[[self contact] email]];
+    [[self phoneLabel] setText:[[self contact] phone]];
+    [[self addressTextView] setText:[[[self contact] location] getFormattedAddress]];
 }
 
 @end

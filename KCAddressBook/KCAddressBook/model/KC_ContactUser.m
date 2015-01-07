@@ -34,8 +34,8 @@
         user.SSN = [rawDict valueForKeyPath:@"user.SSN"];
         user.version = [rawDict valueForKeyPath:@"user.version"];
         
-        user.picture = [KC_Picture initWithDictionary:[rawDict valueForKeyPath:@"user.picture"]]
-        ;
+        user.picture = [KC_Picture initWithDictionary:[rawDict valueForKeyPath:@"user.picture"]];
+        user.location = [KC_Location initWithDictionary:[rawDict valueForKeyPath:@"user.location"]];
     }
     
     return user;
