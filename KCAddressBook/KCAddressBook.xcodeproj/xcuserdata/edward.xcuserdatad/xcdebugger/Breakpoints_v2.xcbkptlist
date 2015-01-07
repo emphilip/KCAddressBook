@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KCAddressBook/API/KC_HTTPClient.m"
-            timestampString = "442212890.117304"
+            timestampString = "442357824.958044"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "-fetchNewUsers"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KCAddressBook/API/KC_HTTPClient.m"
-            timestampString = "442212890.117304"
+            timestampString = "442357824.958044"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "-fetchNewUsers"
             landmarkType = "5">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KCAddressBook/API/KC_HTTPClient.m"
-            timestampString = "442212890.117304"
+            timestampString = "442357824.958044"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "-fetchNewUsers"
             landmarkType = "5">
          </BreakpointContent>
@@ -128,6 +128,96 @@
             startingLineNumber = "32"
             endingLineNumber = "32"
             landmarkName = "-getFormattedAddress"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KCAddressBookTests/KCAddressBookTests.m"
+            timestampString = "442361327.464403"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "-testContactFormattedName"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[KCAddressBookTests testContactFormattedName]"
+                  moduleName = "KCAddressBookTests"
+                  urlString = "file:///Users/ephilip/Code/KCAddressBook/KCAddressBook/KCAddressBookTests/KCAddressBookTests.m"
+                  timestampString = "442362165.41189"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "309">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[KCAddressBookTests testContactFormattedName]"
+                  moduleName = "KCAddressBookTests"
+                  urlString = "file:///Users/ephilip/Code/KCAddressBook/KCAddressBook/KCAddressBookTests/KCAddressBookTests.m"
+                  timestampString = "442362165.412307"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "693">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[KCAddressBookTests testContactFormattedName]"
+                  moduleName = "KCAddressBookTests"
+                  urlString = "file:///Users/ephilip/Code/KCAddressBook/KCAddressBook/KCAddressBookTests/KCAddressBookTests.m"
+                  timestampString = "442362165.412601"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "712">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[KCAddressBookTests testContactFormattedName]"
+                  moduleName = "KCAddressBookTests"
+                  urlString = "file:///Users/ephilip/Code/KCAddressBook/KCAddressBook/KCAddressBookTests/KCAddressBookTests.m"
+                  timestampString = "442362165.412929"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "840">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KCAddressBookTests/KCAddressBookTests.m"
+            timestampString = "442362228.991522"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "-testContactFormattedAddress"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
