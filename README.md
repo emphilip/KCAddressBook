@@ -13,11 +13,17 @@ This mobile application was developed on XCode 6, and tested on iOS 8.  Why? Jus
 <ul>
   <li>Control to fetch new contacts from Random User Generator Web Service </li>
   <li>Rendering of contacts in specified views</li>
+  <li>XCTests to test creation of Contact object(s) from JSON response</li>
+  <li>XCTests to test convenience methods that format various strings for display purposes </li>
 </ul>
 
 <h3>Future Features</h3>
 <ul>
   <li>Ability to pull contacts from Address book</li>
-  <li>Unit tests for API call</li>
+  <li>Edit Contact functionality</li>
+  <li>Unit tests for API call(s)</li>
+  <li>Localization</li>
+  <li>Relevant Unit tests for above features</li>
+  <li>Unit tests to test for expected errors</li> 
 </ul>
 
